@@ -28,3 +28,12 @@ $ pip install git+https://github.com/lucas1/youtube-search-python
 
 ## Install
 
+```
+sudo curl -L https://github.com/lucastiagodemoraes/script-youtube-search-python/releases/download/0.01/script-youtube -o /usr/local/bin/script-youtube
+sudo chmod a+rx /usr/local/bin/script-youtube
+```
+
+```
+sudo wget https://github.com/lucastiagodemoraes/script-youtube-search-python/releases/download/0.01/script-youtube -O /usr/local/bin/script-youtube
+sudo chmod a+rx /usr/local/bin/script-youtube
+```
