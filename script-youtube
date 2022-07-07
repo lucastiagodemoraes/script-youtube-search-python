@@ -29,7 +29,7 @@ os.environ['SOCKS_PROXY'] = socks
 
 if action == 'search':
     from youtubesearchpython import VideosSearch
-    videosSearch = VideosSearch(value, limit = limit, region = region)
+    videosSearch = VideosSearch(query = value, limit = limit, region = region)
     print(videosSearch.result())
 
 if action == 'video':
