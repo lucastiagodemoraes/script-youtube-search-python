@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import os
 import sys
+import json
 
 if len(sys.argv) > 1:
     action = sys.argv[1]
@@ -30,9 +31,9 @@ os.environ['SOCKS_PROXY'] = socks
 if action == 'search':
     from youtubesearchpython import VideosSearch
     videosSearch = VideosSearch(query = value, limit = limit, region = region)
-    print(videosSearch.result())
+    print(json.dumps(videosSearch.result()))
 
 if action == 'video':
     from youtubesearchpython import Video
     video = Video.getInfo(value, 0)
-    print(video)
+    print(json.dumps(video))
