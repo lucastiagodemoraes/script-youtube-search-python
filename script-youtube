@@ -20,12 +20,16 @@ else:
 limit = 10
 if len(sys.argv) > 4:
     limit = int(sys.argv[4])
+    
+region = 'US'
+if len(sys.argv) > 5:    
+    region = sys.argv[5]
 
 os.environ['SOCKS_PROXY'] = socks
 
 if action == 'search':
     from youtubesearchpython import VideosSearch
-    videosSearch = VideosSearch(value, limit = limit)
+    videosSearch = VideosSearch(value, limit = limit, region = region)
     print(videosSearch.result())
 
 if action == 'video':
