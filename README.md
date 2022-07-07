@@ -23,6 +23,7 @@ https://github.com/yt-dlp/yt-dlp
 ### 3 - youtube-search-python
 
 ```
+$ pip install httpx[socks]
 $ pip install git+https://github.com/lucas1/youtube-search-python
 ```
 
