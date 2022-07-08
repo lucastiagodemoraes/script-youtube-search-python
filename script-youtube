@@ -14,7 +14,7 @@ else:
     sys.exit()
 
 if len(sys.argv) > 3:
-    value = sys.argv[4]
+    value = sys.argv[3]
 else:
     sys.exit()
 
